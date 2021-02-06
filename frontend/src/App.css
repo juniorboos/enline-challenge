@@ -1,0 +1,93 @@
+.App {
+  display: flex;
+  width: 100%;
+  background-color: #ededed;
+  height: 100vh;
+}
+
+.function-card {
+  background: #2f2f2f;
+  height: 80px;
+  width: 340px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+}
+
+.form-container,
+.result-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.form-container {
+  padding: 0 100px;
+  max-width: 600px;
+}
+
+form > * {
+  margin: 24px 0;
+}
+
+button {
+  width: 100%;
+  height: 48px;
+  border-radius: 11px;
+  background-color: tomato;
+  border: none;
+
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background-color: rgb(250, 136, 116);
+}
+
+.result-container {
+  background: linear-gradient(165.02deg, #2f2f2f 8.36%, #101010 105.21%);
+  box-shadow: -4px 0px 4px rgba(0, 0, 0, 0.25);
+  max-width: calc(100% - 600px);
+}
+
+.result-container p {
+  color: white;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  /* max-width: 50%; */
+  max-width: 50%;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.small-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 340px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
